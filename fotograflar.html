@@ -6,9 +6,35 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     .motor-img {
+      position: relative;
       width: 100%;
       height: 200px; 
-      object-fit: cover; 
+      object-fit: cover;
+      border: 2px solid transparent; 
+      transition: transform 0.3s ease; 
+    }
+
+    .motor-img:hover {
+      transform: scale(1.1); 
+      border-color: #000; 
+      z-index: 1; 
+    }
+
+    .motor-caption {
+      position: absolute;
+      bottom: -30px; 
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7); 
+      color: #fff; 
+      padding: 5px;
+      text-align: center;
+      opacity: 0; 
+      transition: opacity 0.3s ease;
+    }
+
+    .motor-img:hover .motor-caption {
+      opacity: 1; 
     }
   </style>
 </head>
@@ -16,39 +42,66 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">motor bisiklet foto Galerisi</a>
+      <a class="navbar-brand" href="#">motor bisiklet fotograf Galerisi</a>
     </div>
   </nav>
 
   <div class="container mt-4">
     <div class="row">
       <div class="col-md-4 mb-4">
-        <img src="img/2024 TRACER 7.jpg" alt=" motor 1" class="motor-img">
+        <div class="motor-item">
+          <img src="img/2024 TRACER 7.jpg" alt="motor 1" class="motor-img">
+          <div class="motor-caption">2024 TRACER 7</div>
+        </div>
       </div>
       <div class="col-md-4 mb-4">
-        <img src="img/mt 07 pure.jpg" alt="motor 2" class="motor-img">
-      </div>
-      <div class="col-md-4 mb-4">
-        <img src="img/mt 10sp.jpg" alt="motor 3" class="motor-img">
-      </div>
-      <div class="col-md-4 mb-4">
-        <img src="img/R7 World GP 60.Yıl Özel Serisi.jpg" alt="motor 4" class="motor-img">
-      </div>
-      <div class="col-md-4 mb-4">
-        <img src="img/TRACER 9.jpg" alt="motor 5" class="motor-img">
-      </div>
-      <div class="col-md-4 mb-4">
-        <img src="img/XSR700 XTribute.jpg" alt="motor 6" class="motor-img">
-      </div>
-      <div class="col-md-4 mb-4">
-        <img src="img/XSR900 GP.jpg" alt="motor 7" class="motor-img">
-      </div>
-      <div class="col-md-4 mb-4">
-        <img src="img/yuki gp2.jpg" alt="motor 8" class="motor-img">
-      </div>
-      <div class="col-md-4 mb-4">
-        <img src="img/TRACER 9 GT+.jpg" alt="motor 9" class="motor-img">
-      </div>
+        <div class="motor-item">
+          <img src="img/mt 07 pure.jpg" alt="motor 2" class="motor-img">
+          <div class="motor-caption">mt 07 pure</div>
+         </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="motor-item">
+          <img src="img/mt 10sp.jpg" alt="motor 3" class="motor-img">
+          <div class="motor-caption">mt 10sp</div>
+        </div>
+         </div>
+        <div class="col-md-4 mb-4">
+          <div class="motor-item">
+          <img src="img/R7 World GP 60.Yıl Özel Serisi.jpg" alt="motor 4" class="motor-img">
+          <div class="motor-caption">R7 World GP</div>
+         </div>
+         </div>
+         <div class="col-md-4 mb-4">
+          <div class="motor-item">
+          <img src="img/TRACER 9 GT+.jpg" alt="motor 5" class="motor-img">
+          <div class="motor-caption">TRACER 9 GT+</div>
+         </div>
+         </div>
+         <div class="col-md-4 mb-4">
+         <div class="motor-item">
+          <img src="img/TRACER 9.jpg" alt="motor 6" class="motor-img">
+          <div class="motor-caption">TRACER 9</div>
+        </div>
+         </div>
+         <div class="col-md-4 mb-4">
+          <div class="motor-item">
+          <img src="img/XSR700 XTribute.jpg" alt="motor 7" class="motor-img">
+          <div class="motor-caption">XSR700 XTribute</div>
+          </div>
+         </div>
+         <div class="col-md-4 mb-4">
+          <div class="motor-item">
+          <img src="img/XSR900 GP.jpg" alt="motor 8" class="motor-img">
+          <div class="motor-caption">XSR900 GP</div>
+         </div>
+          </div>
+           <div class="col-md-4 mb-4">
+         <div class="motor-item">
+          <img src="img/yuki gp2.jpg" alt="motor 9" class="motor-img">
+          <div class="motor-caption">yuki gp2</div>
+         </div>
+        </div>
     </div>
   </div>
 
